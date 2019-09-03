@@ -1,0 +1,28 @@
+/*
+ * afacchini 
+ * custom CSS-only checkbox
+ */ 
+
+.cc-checkbox-outer{
+	width: 11px;
+    height: 11px;
+    border: 1px solid #002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cc-checkbox-inner{
+    width: 80%;
+    height: 80%;
+}
+
+.cc-checkbox-outer input:checked + .cc-checkbox-inner{
+	background-color: #003;
+}
+
+.cc-checkbox-outer input{
+	opacity: 0;
+	position: absolute;
+}
